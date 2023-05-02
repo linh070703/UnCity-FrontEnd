@@ -1,0 +1,144 @@
+
+body {
+  color: white;
+  overflow-x: hidden;
+}
+h1 {
+  text-transform: uppercase;
+}
+@keyframes slide-up {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}  
+.slider img {
+  animation: slide 5s linear infinite;
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(40%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+#line-paragraph {
+  border-left: 10px solid turquoise;
+  padding-left: 10%;
+} 
+
+
+
+@media screen  and (min-device-width: 0) and (max-device-width: 500px) {
+  body {
+    color: white;
+    overflow-x: hidden;
+  }
+  html {
+    width: fit-content;
+    height: fit-content;
+    background: url("Component 15 – 4.png") no-repeat fixed;
+    background-size: cover;
+    background-position-x: right ;
+    font-size: 50pt;
+  }
+  .reveal {
+    border: 5px solid white;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide-up 2s forwards;
+    text-align: center;
+    width: 100%;
+    padding: 5%;
+    }
+
+  .imgWrapper img{
+    width: 70%;
+  }
+  
+  #etc{ font-size: 100pt;}
+  
+  .circle {
+    border: 2px solid orangered;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 15%;
+  }  
+  .circle:active {
+    background-color: orangered;
+  }  
+  img {
+    width: 70%;
+  }
+}
+
+@media screen and (min-device-width: 500px) and (max-device-width: 1300px) {
+  html {
+    width: fit-content;
+    height: fit-content;
+    background: url("Component 15 – 4.png") no-repeat fixed;
+    background-size: cover;
+    background-position-x: right ;
+    font-size: 25pt;
+    color: white;
+  }  
+
+  .imgWrapper img{
+    width: 50%;
+  }
+  .reveal {
+    border: 5px solid white;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide-up 2s forwards;
+    text-align: center;
+    width: 50%;
+    font-size: 20pt;
+    }
+
+    #table {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-gap: 5%;
+    } 
+    #box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 5%;
+      width: 100%;
+    } 
+    .imgWrapper img{
+      width: 80%;
+    }
+  #box p {
+    padding: 20%;
+  }
+  .circle {
+    border: 2px solid orangered;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 15%;
+  }  
+  img {
+    width: 30%;
+    margin:10%
+  }
+  .circle:hover {
+    background-color: orangered;
+  }  
+}
