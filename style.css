@@ -36,11 +36,12 @@ h1 {
   body {
     color: white;
     overflow-x: hidden;
+    margin: 5%;
   }
   html {
     width: fit-content;
     height: fit-content;
-    background: url("Component 15 – 4.png") no-repeat fixed;
+    background: url("img/Component 15 – 4.png") no-repeat fixed;
     background-size: cover;
     background-position-x: right ;
     font-size: 50pt;
@@ -84,11 +85,12 @@ h1 {
   html {
     width: fit-content;
     height: fit-content;
-    background: url("Component 15 – 4.png") no-repeat fixed;
+    background: url("img/Component 15 – 4.png") no-repeat fixed;
     background-size: cover;
     background-position-x: right ;
     font-size: 25pt;
     color: white;
+    margin: 10%;
   }  
 
   .imgWrapper img{
