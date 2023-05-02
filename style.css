@@ -2,6 +2,7 @@
 body {
   color: white;
   overflow-x: hidden;
+  margin: 5%;
 }
 h1 {
   text-transform: uppercase;
@@ -12,7 +13,7 @@ h1 {
     transform: translateY(0);
   }
 }  
-.slider img {
+#slider {
   animation: slide 5s linear infinite;
   width: 100%;
 }
@@ -30,9 +31,12 @@ h1 {
   padding-left: 10%;
 } 
 
+#under-box{
+  display: Flex; 
+  justify-content: center;
+}
 
-
-@media screen  and (min-device-width: 0) and (max-device-width: 500px) {
+@media screen  and (min-device-width: 0) and (max-device-width: 1000px) {
   body {
     color: white;
     overflow-x: hidden;
@@ -52,12 +56,18 @@ h1 {
     transform: translateY(100%);
     animation: slide-up 2s forwards;
     text-align: center;
-    width: 100%;
+    width: 120%;
     padding: 5%;
     }
 
   .imgWrapper img{
     width: 70%;
+  }
+  #under-box{
+    width: 130%;
+  }
+  #slider {
+    width: 100%;
   }
   
   #etc{ font-size: 100pt;}
@@ -81,7 +91,7 @@ h1 {
   }
 }
 
-@media screen and (min-device-width: 500px) and (max-device-width: 1300px) {
+@media screen and (min-device-width: 1000px) and (max-device-width: 30000px) {
   html {
     width: fit-content;
     height: fit-content;
@@ -90,11 +100,10 @@ h1 {
     background-position-x: right ;
     font-size: 25pt;
     color: white;
-    margin: 10%;
   }  
 
-  .imgWrapper img{
-    width: 50%;
+  .imgWrapper img, p{
+    width: 250%;
   }
   .reveal {
     border: 5px solid white;
@@ -102,29 +111,37 @@ h1 {
     transform: translateY(100%);
     animation: slide-up 2s forwards;
     text-align: center;
-    width: 50%;
     font-size: 20pt;
+    width: 250%;
     }
 
     #table {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(1, 1fr);
-      grid-gap: 5%;
+      grid-gap: 20%;
+      width: 80%;
+      margin: 2%;
     } 
     #box {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 5%;
-      width: 100%;
-    } 
-    .imgWrapper img{
+      grid-column-gap: 30%;
       width: 80%;
-    }
+    } 
   #box p {
     padding: 20%;
   }
+
+  #under-box{
+    width: 100%;
+  }
+  #slider {
+    width: 100%;
+  }
+  
+  #etc{ font-size: 50pt;}
   .circle {
     border: 2px solid orangered;
     width: 650px;
@@ -134,13 +151,11 @@ h1 {
     position: relative;
     margin-top: 150px;
     margin-bottom: 150px;
-    padding: 15%;
+    padding: 10%;
   }  
-  img {
-    width: 30%;
-    margin:10%
-  }
+
   .circle:hover {
     background-color: orangered;
   }  
+
 }
